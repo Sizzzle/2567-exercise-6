@@ -22,6 +22,9 @@
 	5.3 - Spacing
 	5.4 - Alignments
 6.0 - Small Screen
+	6.1 - Typography
+	6.2 - Columns
+	6.3 - Other
 --------------------------------------------------------------*/
 
 
@@ -79,21 +82,42 @@ h4 {
 form {
 	padding-left:20px;
 }
+
 form div {
 	padding: 10px;
 }
+
 form .col-1 {
 	padding-right: 2rem !important;
 }
+
+form a {
+	margin-top: 20px;
+	padding:10px 20px;
+	background-color: #146c57;
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	display:inline-block;
+	font-weight: 600;
+}
+
+form a:hover {
+	color: #146c57;
+	background-color: white;	
+}
+
 label {
 	display:none;
 }
+
 input, textarea {
 	background-color: #19896e;
 	width: 100%;
 	padding: 10px;
 	border:1px solid #19896e;
 }
+
 input:focus, textarea:focus {
 	outline:none;
 	border:1px solid #115e4b;
@@ -113,22 +137,7 @@ input:focus, textarea:focus {
 :-ms-input-placeholder {  
    color: white;  
 }
-form a {
-	margin-top: 20px;
-	padding:10px 20px;
-	background-color: #146c57;
-	text-transform: uppercase;
-	color: white;
-	text-decoration: none;
-	display:inline-block;
-	font-weight: 600;
-}
 
-form a:hover {
-	color: #146c57;
-	background-color: white;
-	
-}
 /*--------------------------------------------------------------
 1.4 - LISTS
 -------------------------------------------------------------- */
@@ -146,8 +155,6 @@ dd {
 /*--------------------------------------------------------------
 2.0 Navigation Menus
 -------------------------------------------------------------- */
-
-
 nav {
 	text-align: right;
 }
@@ -267,10 +274,10 @@ figure {
 .col-1-12 {
 	width: 8.33%;
 }
+
 /*--------------------------------------------------------------
  3.3- PARTIAL COLUMNS
 -------------------------------------------------------------- */
-
 .col-2-3 {
 	width: 66.66%;
 }
@@ -343,6 +350,7 @@ figure {
 .col-9-12 {
 	width: 91.67%;
 }
+
 /*--------------------------------------------------------------
  3.4- SECTIONS
 -------------------------------------------------------------- */
@@ -355,7 +363,6 @@ figure {
 /*--------------------------------------------------------------
  4.0- MEDIA
 -------------------------------------------------------------- */
-
 #hero { 
   background: url(../img/hero.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -379,6 +386,7 @@ figure {
 #services {
 	background-color:#218FB4;
 }
+
 #contact {
 	background-color:#21b490;
 }
@@ -389,6 +397,7 @@ figure {
 .txt-uppercase {
 	text-transform:uppercase;
 }
+
 .txt-center {
 	text-align: center;
 }
@@ -399,21 +408,27 @@ figure {
 .p-t-sm {
 	padding-top: 10px;
 }
+
 .p-t-md {
 	padding-top: 20px;
 }
+
 .p-t-lg {
 	padding-top: 50px;
 }
+
 .p-b-lg {
 	padding-bottom: 50px;
 }
+
 .p-b-xl {
 	padding-bottom: 100px;
 }
+
 .m-t-0 {
 	margin-top: 0;
 }
+
 .m-b-lg {
 	margin-bottom: 50px;
 }
@@ -421,7 +436,6 @@ figure {
 /*--------------------------------------------------------------
 5.4 - ALIGNMENTS
 -------------------------------------------------------------- */
-
 .center-block {
 	margin: 0 auto;
 	float: none !important;
@@ -436,26 +450,28 @@ figure {
 -------------------------------------------------------------- */
 
 @media screen and (max-width: 480px) {
-	
+/*--------------------------------------------------------------
+ 6.1 - Typography
+-------------------------------------------------------------- */
 	h1 { font-size: 2rem;
 		line-height: 1.9rem;
-		
 	}
 	
 	h2 { font-size: 1.75rem;
-		
 	}
-	h3 {
-		font-size: 1.25rem;
+	
+	h3 { font-size: 1.25rem;
 	}
 	
 	p { font-size: 1.25rem;
 	}
 	
-	
 	nav li { font-size: 1.5rem;
 	}
 	
+/*--------------------------------------------------------------
+ 6.2 - Columns
+-------------------------------------------------------------- */
 	.col-1-2 {
 		width: 100%;
 	}
@@ -474,6 +490,9 @@ figure {
 		width: 100%
 	}
 	
+/*--------------------------------------------------------------
+ 6.3 - Other
+-------------------------------------------------------------- */
 	#map {
 		width: 100%
 	}
